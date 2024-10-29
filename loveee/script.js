@@ -186,11 +186,6 @@ u.writeT("5*cos(2t)- 2*cos(3t) - cos(4t)",0.5*W,0.9*H);
 };
 
 const init = () => {
-    const audio = new Audio('saat bahagia.mp3');
-    audio.loop = true; 
-    document.addEventListener('click', () => {
-        audio.play();
-    }, { once: true }); 
     ctx = document.querySelector("#cvs").getContext("2d");
     W = ctx.canvas.width = innerWidth;
     H = ctx.canvas.height = innerHeight;
